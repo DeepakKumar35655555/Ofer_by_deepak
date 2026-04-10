@@ -1,0 +1,120 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Offers by Deepak</title>  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+
+    body { background: linear-gradient(to right, #fdfbfb, #ebedee); }
+
+    header {
+      background: linear-gradient(45deg, #ff416c, #ff4b2b);
+      color: white;
+      padding: 15px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo { font-size: 22px; font-weight: 600; }
+    .logo span { color: yellow; }
+
+    .banner {
+      height: 180px;
+      background: url('https://images.unsplash.com/photo-1607083206968-13611e3d76db') center/cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 26px;
+      font-weight: bold;
+    }
+
+    .container {
+      padding: 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .product {
+      background: white;
+      border-radius: 15px;
+      padding: 15px;
+      text-align: center;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      transition: 0.3s;
+    }
+
+    .product:hover { transform: translateY(-5px); }
+
+    .product img { width: 50%; border-radius: 10px; }
+
+    .price { color: #28a745; font-weight: 600; margin: 10px 0; }
+
+    .buy-btn {
+      background: linear-gradient(45deg, #28a745, #34d058);
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 25px;
+      cursor: pointer;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: #222;
+      color: white;
+      margin-top: 20px;
+    }
+  </style></head>
+<body><header>
+  <div class="logo">Offers by <span>Deepak</span></div>
+</header><div class="banner">🔥 Best Deals Just For You 🔥</div><div class="container">  <div class="product">
+    <img src="/meesho /file_00000000580471fa8121e4598b1ccc60.png">
+    <h3>Degital Sports Watch</h3>
+    <div class="price">₹199</div>
+    <button class="buy-btn" onclick="goToSurvey('Degital Sports Watch')">Buy Now</button>
+  </div>  <div class="product">
+    <img src="/meesho /file_000000004420720885f7b59ee467ce8d.png">
+    <h3>Men Analog Watch</h3>
+    <div class="price">₹299</div>
+    <button class="buy-btn" onclick="goToSurvey('Men Analog Watch')">Buy Now</button>
+  </div>  <div class="product">
+    <img src="https://via.placeholder.com/220">
+    <h3>Bluetooth Speaker</h3>
+    <div class="price">₹999</div>
+    <button class="buy-btn" onclick="goToSurvey('Bluetooth Speaker')">Buy Now</button>
+  </div></div><footer>© 2026 Offers by Deepak</footer><!-- CONTACT BUTTON --><a href="contact.html" target="_blank" class="contact-btn">Contact Us</a>
+
+<style>
+.contact-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25D366;
+  color: white;
+  padding: 12px 18px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  z-index: 1000;
+}
+
+.contact-btn:hover {
+  background: #1ebe5d;
+}
+</style><script>
+  function goToSurvey(productName) {
+    // Encode product name for URL
+    const encodedProduct = encodeURIComponent(productName);
+
+    // IMPORTANT: Replace 'q1' with your actual SurveyMars question field name
+    const surveyURL = `https://surveymars.com/q/lxKMizMir?q1=${encodedProduct}`;
+
+    window.location.href = surveyURL;
+  }
+</script></body>
+</html>
